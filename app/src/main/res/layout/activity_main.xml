@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ba.franz.mvcdemo.controller.MainActivity">
+
+    <Button
+        android:id="@+id/trigger1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:layout_marginStart="12dp"
+        android:text="Insert"
+        app:layout_constraintBottom_toTopOf="@+id/Int1"
+        app:layout_constraintStart_toStartOf="@+id/Int1" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="-7dp" />
+
+    <Button
+        android:id="@+id/Int1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:layout_marginStart="12dp"
+        android:text="Intent(Tel.)"
+        app:layout_constraintBottom_toTopOf="@+id/Int2"
+        app:layout_constraintStart_toStartOf="@+id/Int2" />
+
+    <Button
+        android:id="@+id/Int2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="128dp"
+        android:text="Intent(New AC)"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/namebox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="57dp"
+        android:contentDescription="put name"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textAlignment="textStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/agebox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:contentDescription="put xour age"
+        android:ems="10"
+        android:hint="Age"
+        android:inputType="textPersonName"
+        android:textAlignment="textStart"
+        app:layout_constraintStart_toStartOf="@+id/namebox"
+        app:layout_constraintTop_toBottomOf="@+id/namebox" />
+
+</android.support.constraint.ConstraintLayout>
